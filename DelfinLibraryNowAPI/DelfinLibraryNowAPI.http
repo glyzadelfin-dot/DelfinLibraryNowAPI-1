@@ -1,0 +1,6 @@
+@DelfinLibraryNowAPI_HostAddress = http://localhost:5144
+
+GET {{DelfinLibraryNowAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
