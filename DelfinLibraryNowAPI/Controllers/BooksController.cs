@@ -11,8 +11,8 @@ namespace DelfinLibraryNowAPI.Controllers
         private static List<Book> books = new List<Book>
         {
 
-            new Book { Id = 1, Title = "The Notebook", Author = "Nicholas Sparks", Genre = "Romance", Available = true, PublishedYear = 1996 },
-            new Book { Id = 2, Title = "Dear John", Author = "Nicholas Sparks", Genre = "Romance", Available = true, PublishedYear = 2006 },
+           new Book { Id = 1, Title = "Little Women", Author = "Louisa May Alcott", Genre = " historical fiction", Available = true, PublishedYear = 2014 },
+           new Book { Id = 2, Title = "Pride and Prejudice", Author = "Jane Austen", Genre = "Romance", Available = true, PublishedYear = 2002 }
 
     };
 
