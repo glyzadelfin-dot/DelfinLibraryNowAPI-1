@@ -16,13 +16,13 @@ namespace DelfinLibraryNowAPI.Controllers
 
     };
 
-        [HttpGet("{id}")]
+        [HttpGet]
         public IActionResult GetAll()
         {
             return Ok(new { status = "success", data = books, message = "Books retrieved." });
         }
 
-        [HttpGet]
+       [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
             var book = books.FirstOrDefault(book => book.Id == id);
@@ -31,7 +31,7 @@ namespace DelfinLibraryNowAPI.Controllers
             return Ok(new { status = "success", data = book, message = "Book retrieved." });
         }
 
-        [HttpPost("{id}")]
+        [HttpPost]
         public IActionResult Create([FromBody] Book newBook)
         {
             newBook.Id = books.Count + 1;
